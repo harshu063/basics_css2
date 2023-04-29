@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background: white;
+    padding: 0;
+    margin: 0;
+    overflow-x: none;
+}
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    border-bottom: 3px solid;
+  }
+  .nav > .nav-header {
+    display: inline;
+  }
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: black;
+    padding: 10px 10px 10px 10px;
+  }
+  .nav > .nav-btn {
+    display: none;
+  }
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: black;
+  }
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > #nav-check {
+    display: none;
+  }
+  @media screen and (max-width:700px) and (min-width:300px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 3px solid black;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: rgb(114, 104, 104);
+      height: 0px;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+      color: black;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+    .caption-container{
+        display: flex;
+        text-align: center;
+        padding: 20 px 0 20px 0;
+    }
+    .mika-icons img{
+        height: 50px;
+        width: 50px;
+        margin-left: -20px;
+        padding: 10px;
+    }
+    .mika-about {
+        margin-left: 30px;
+    }
+    .mika-about p{
+        margin-left: 10px;
+    }
+    .mika-container img{
+        height: 20px;
+        width: 20px; 
+    }
+    .about-img~p{
+        padding-top: 40px;
+        padding-left: 18px;
+    }
+    body{
+        padding-bottom: 200
+        px;
+    }
+  }
+  .yellow-image{
+    padding: 35px 0 35px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .ylw-img{
+    height: 30vh;
+    width: 100vw;
+}
+.caption-container{
+    display: flex;
+    border-bottom: 5px solid;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.personal-blog{
+    display: flex;
+    justify-content: center;
+}
+.name-container div{
+    display: flex;
+    justify-content: center;
+}
+.mika-icons{
+    height: 50px;
+    width: 50px;
+    margin: -40px 0 0 50px;
+}
+.mika-about{
+    margin-top: -30px;
+}
+.mika-container img{
+    height: 50px;
+    width: 50px;
+   margin: 10px 0 0 -700px;
+}
+.review-container p{
+    line-height: 150%;
+}
+.review-container p,h2{
+    padding: 20px;
+}
+.nose-image{
+    height: 30vh;
+    width: 100vw; 
+}
+.list-items.ul.li{
+    list-style-type: circle;
+    padding: 10px;
+}
+.list-items{
+    margin-left: 30px;
+}
+.fb-tweet{
+    float: left;
+    margin: 0px 30px ;  
+}
+.fb-tweet button{
+    padding: 10px;
+    margin-right: 35px;
+    margin-bottom: 20px;
+}
+.heading{
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 10px;
+    font-size: 25px;
+}
+.cart-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.cart-top div img{
+    padding: 40px 0px 20px 0;
+}
+.spacing{
+    margin-left: 25px;
+}
+.sign-up{
+    height: 200px;
+    border: 1px solid;
+    border-top: 9px solid;
+    width: 90vw;
+    margin: 100px 0 0 20px;
+    text-align: center;
+}
+.sign-up h3{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.sign-up p{
+    margin: 15px 0px;
+}
+.sign-up input{
+    padding: 5px;
+}
+.sign-up button{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    margin-left: -10px;
+}
+footer .footer {
+    padding: 15px 30px;
+    margin-top: 100px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.footer p{
+    padding-bottom: 50px;
+}
+.footer a{
+    color: white;
+    padding: 20px;
+}
+.footer p{
+    display: flex;
+    justify-content: center;
+}
+
